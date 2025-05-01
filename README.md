@@ -1,4 +1,5 @@
-![Logo do projeto](./logo.png)
+<div align="center">
+<img src="./logo.png" alt="Markdownify"></div>
 
 # Testes automatizados usando Robot Framework com biblioteca de navegador
 
