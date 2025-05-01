@@ -1,91 +1,71 @@
-![Logo do projeto](https://i.imgur.com/kniMQHu.png)
+![Logo do projeto](./logo.png)
 
-# Nome do Projeto
-
-Uma breve descrição do projeto aqui.
+# Testes automatizados usando Robot Framework com biblioteca de navegador
 
 ## 🔥 Introdução
 
-Coloque aqui as instruções e quais são os objetivos desse projeto, funcionalidades.
+Esse projeto tem como objetivo desenvolver testes e2e usando o [Robot Framework](https://robotframework.org/) na seguinte aplicação: https://www.saucedemo.com/
 
 ### ⚙️ Pré-requisitos
 
-Coloque aqui passo a passo que precisa para instalar o projeto e como instalá-lo.
+Para executar os testes é necessário ter instalado em sua máquina:
 
-```
-Pode inserir exemplos.
-```
+- Algum editor de código como [VS Code](https://code.visualstudio.com/) ou [PyCharm](https://www.jetbrains.com/pycharm/)
+- [Python](https://www.python.org/)
+- [Node.JS](https://nodejs.org/en/download) necessário para a biblioteca do navegador
 
 ### 🔨 Guia de instalação
 
-Explique aqui um passo a passo mostrando como deve executar para ter um ambiente de desenvolvimento em execução, desde instalar e rodar o projeto.
-
 Etapas para instalar:
 
-```
-Codigo, exemplos
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Darlan0307/Robot-Tests-E2E.git
 ```
 
-Passo 2:
+2: Criar e ativar ambiente virtual:
 
-```
-Codigo, exemplos
+```bash
+python3 -m venv venv
+source venv/bin/activate # (Linux/Mac)
+venv\Scripts\activate.bat # (Windows)
 ```
 
-## 🛠️ Executando os testes (caso tenha testes)
+3: Instalar as dependências:
 
-Explique como executar os testes automatizados para este sistema.
+```bash
+pip install -r requirements.txt
+```
 
+e depois
+
+```bash
+rfbrowser init
 ```
-Coloque exemplos
+
+## 🛠️ Executando os testes
+
+1. De permissão para executar o script:
+
+```bash
+chmod +x run_tests.sh
 ```
+
+2. Executar os testes:
+
+```bash
+./run_tests.sh
+```
+
+No próprio terminal será exibido o resultado dos testes. Mas também será criado uma pasta com o nome "results" na raiz do projeto, com mais detalhes dos testes executados.
 
 ## 📦 Tecnologias usadas:
 
-Coloque aqui as ferramentas que você usou para criar seu projeto, exemplo:
+- Python 3.12
+- Robot Framework 7.2.2
+- Robot Framework Browser 19.4.0
 
-- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+## 👷 Autor
 
-* Link para pegar as badges: https://github.com/Ileriayo/markdown-badges
-
-Ou pode separar por stacks:
-
-**Front-end:**
-
-- [React JS](https://react.dev/)
-- [TailwindCSS](https://tailwindcss.com/)
-
-**Back-end:**
-
-- [NodeJS](https://nodejs.org/).
-- [TypeScript](https://www.typescriptlang.org/)
-- [Mongo DB](https://mongodb.com/)
-
-## 👷 Autores
-
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início, colaboradores.
-
-- **Nome do dev** - _Função realizada_ - [nome_do_dev](https://github.com/link_do_Perfil)
-- **Sujeito Programador** - _Frontend do projeto_ - [@sujeitoprogramador](https://github.com/devfraga)
-
-## 📄 Licença
-
-Esse projeto está sob a licença (nome da licença) - acesse os detalhes [LICENSE.md](https://github.com/link_da_licenca).
-
-## 💭 FAQ - Perguntas frequentes
-
-#### Questão 1
-
-Resposta 1
-
-#### Questão 2
-
-Resposta 2
-
-## 💡 Expressões de gratidão
-
-- Um agradecimento publicamente.
-- Para suporte, mande um email para nome@teste.com.
-- Link para o seu linkedin [Meu linkedin](https://www.linkedin.com/in/darlan-martins-8a7956259/)
+**Darlan Martins** - [LinkedIn](https://www.linkedin.com/in/darlan-martins-8a7956259/)
