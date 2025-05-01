@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./logo.png" alt="Markdownify"></div>
+<img src="./logo.jpg" alt="Markdownify"></div>
 
 # Testes automatizados usando Robot Framework com biblioteca de navegador
 
