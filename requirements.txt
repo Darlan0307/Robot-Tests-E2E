@@ -1,0 +1,14 @@
+click==8.1.8
+grpcio==1.70.0
+grpcio-tools==1.70.0
+natsort==8.4.0
+overrides==7.7.0
+protobuf==5.29.3
+PyYAML==6.0.2
+robotframework==7.2.2
+robotframework-assertion-engine==3.0.3
+robotframework-browser==19.4.0
+robotframework-pythonlibcore==4.4.1
+seedir==0.5.0
+setuptools==80.1.0
+wrapt==1.17.2

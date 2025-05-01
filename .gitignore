@@ -1,0 +1,17 @@
+**/.DS_Store
+**/.pyc
+**/results/
+**/browser/
+**/__pycache__/
+**/.vscode
+**/.python-version
+node_modules
+robotframework2testrail.log
+playwright-log.txt
+log.html
+report.html
+output.xml
+env_*.yaml
+**/interactive_console_output.xml
+venv
+**/appium.log
