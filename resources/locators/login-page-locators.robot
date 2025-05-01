@@ -1,6 +1,7 @@
 *** Variables ***
 
 # Main Input
+${sectionForm}      xpath=//div[@class="login_wrapper"]
 ${textHeaderLogin}  xpath=//div[@class="login_logo"]
 ${inputUsername}    xpath=//input[@data-test="username"]
 ${inputPassword}    xpath=//input[@data-test="password"]
