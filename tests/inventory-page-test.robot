@@ -26,3 +26,16 @@ As a User, I will see Inventory Item when click on it
     Click Inventory Item By Name    Sauce Labs Backpack
     Verify Inventory Item Details
     Perform Logout
+
+As a user, I want to add 2 items to the cart
+     [Documentation]  after logging in and adding two items to the cart
+    ...  then the cart page is accessed to check if you have two items
+    Login User    ${validUsername}    ${validPassword}
+    Click Inventory Item By Name    Sauce Labs Backpack
+    Click Button By Class And Name    btn_inventory     Add to cart
+    Click Button By Class And Name    back    Back to products
+    Verify Current URL    https://www.saucedemo.com/inventory.html
+    Click Inventory Item By Name    Sauce Labs Bike Light
+    Click Button By Class And Name    btn_inventory     Add to cart
+    Verify Number Of Items In Cart    2
+    Perform Logout

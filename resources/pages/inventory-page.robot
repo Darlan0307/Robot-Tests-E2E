@@ -52,3 +52,22 @@ Click Inventory Item By Name
 Verify Inventory Item Details
     Verify Element  ${inventoryDetails}
 
+Click Button By Class And Name
+    [Arguments]    ${class}    ${name}
+    ${itemLocator}=    Set Variable    //button[contains(@class, "${class}") and text()="${name}"]
+    Verify Element    ${itemLocator}
+    Click     ${itemLocator}
+
+
+Click Cart Link 
+    Verify Element    ${cartLink}
+    Click    ${cartLink}
+
+Verify Number Of Items In Cart
+    [Arguments]    ${qtdItems}
+    Click Cart Link
+    Verify Current URL    https://www.saucedemo.com/cart.html
+    Verify Element    ${cartList}
+    ${count}=    Get Element Count    ${cartItem}
+    Should Be Equal As Numbers    ${count}    ${qtdItems}
+
