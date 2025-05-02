@@ -31,6 +31,8 @@ git clone https://github.com/Darlan0307/Robot-Tests-E2E.git
 python3 -m venv venv
 source venv/bin/activate # (Linux/Mac)
 venv\Scripts\activate.bat # (Windows)
+# se o código acima não funcionar, tente o seguinte:
+venv\Scripts\Activate.ps1
 ```
 
 3: Instalar as dependências:
